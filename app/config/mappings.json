@@ -1,0 +1,67 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/SeminaroneMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/get": {
+        "realization": "api/controllers/SeminaroneStudentsController.get",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "dtoInAuditMap": {
+          "id": "$.id"
+        }
+      },
+      "student/list": {
+        "realization": "api/controllers/SeminaroneStudentsController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "student/create": {
+        "realization": "api/controllers/SeminaroneStudentsController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "student/update": {
+        "realization": "api/controllers/SeminaroneStudentsController.update",
+        "httpMethod": "PUT",
+        "type": "CMD"
+      },
+      "student/delete": {
+        "realization": "api/controllers/SeminaroneStudentsController.delete",
+        "httpMethod": "POST",
+        "type": "CMD",
+        "dtoInAuditMap": {
+          "id": "$.id"
+        }
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/SeminaroneMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/SeminaroneMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/apiConsole": {
+        "realization": "api-console.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      }
+    }
+  }
+}

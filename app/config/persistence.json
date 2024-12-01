@@ -1,0 +1,16 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "seminaroneMain": {
+          "realization": "dao/SeminaroneMainMongo"
+        },
+        "student":{
+          "realization": "dao/StudentMongo"
+        }
+      }
+    }
+  }
+}
