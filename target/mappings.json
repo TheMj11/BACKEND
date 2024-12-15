@@ -559,6 +559,14 @@
         "httpMethod": "POST",
         "type": "CMD"
       },
+      "student/get": {
+        "realization": "api/controllers/SeminaroneStudentsController.get",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "dtoInAuditMap": {
+          "id": "$.id"
+        }
+      },
       "student/list": {
         "realization": "api/controllers/SeminaroneStudentsController.list",
         "httpMethod": "GET",

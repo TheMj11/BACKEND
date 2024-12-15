@@ -479,7 +479,7 @@
       },
       "student/delete": {
         "sysStateList": ["active"],
-        "profileList": ["Authorities", "Operatives"],
+        "profileList": ["Public"],
         "disabledInTierList": [],
         "licensePolicy": "licensed"
       }
