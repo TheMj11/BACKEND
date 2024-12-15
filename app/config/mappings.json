@@ -26,7 +26,7 @@
       },
       "student/update": {
         "realization": "api/controllers/SeminaroneStudentsController.update",
-        "httpMethod": "PUT",
+        "httpMethod": "POST",
         "type": "CMD"
       },
       "student/delete": {
@@ -36,31 +36,6 @@
         "dtoInAuditMap": {
           "id": "$.id"
         }
-      },
-      "sys/uuAppWorkspace/load": {
-        "realization": "api/controllers/SeminaroneMainController.load",
-        "httpMethod": "GET",
-        "type": "CMD"
-      },
-      "sys/uuAppWorkspace/loadBasicData": {
-        "realization": "api/controllers/SeminaroneMainController.loadBasicData",
-        "httpMethod": "GET",
-        "type": "CMD"
-      },
-      "defaultUve": {
-        "realization": "index.html",
-        "httpMethod": "GET",
-        "type": "UVE"
-      },
-      "sys/uuAppWorkspace/initUve": {
-        "realization": "index.html",
-        "httpMethod": "GET",
-        "type": "UVE"
-      },
-      "sys/uuAppWorkspace/apiConsole": {
-        "realization": "api-console.html",
-        "httpMethod": "GET",
-        "type": "UVE"
       }
     }
   }
